@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100vh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="flex-column">
+    <nav class="navbar navbar-expand-lg navbar-light mx-auto w-75 my-0 p-0 ">
+        <div class="collapse navbar-collapse my-0" id="navbarSupportedContent">
+            <header>
+                <h1 class="h1 text-light bg-info mh-100 py-3 px-4 my-0">Harry Shen</h1>
+            </header>
+
+            <div class="nav navbar-nav ml-auto">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-black-50" id="about" href="index.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-black-50 px-3 border-right border-left ml-3 mr-3"
+                            id="portfolio" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link text-black-50" id="contact" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="bg-light border-top w-100 h-100">
+        <div class="container w-75">
+            <div class="row bg-white mt-3">
+                <article class="col-sm-12" id="main-content">
+                    <div class="row mx-auto pl-0 py-2 border-bottom">
+                        <div class="col-sm-11 ">
+                            <h1 class="h1">Contact</h2>
+                        </div>
+                    </div>
+
+                    <div class="row mx-auto mt-3 ">
+                        <div class="col-sm-11">
+                            <form action="#">
+                                <div class="form-group">
+                                    <label for="input_name">Name</label>
+                                    <input class="form-control" id="input_name" type="text"
+                                        placeholder="Your Name if you still remember it" name="name"><br>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input_email">Email</label>
+                                    <input class="form-control" id="input_email" type="email"
+                                        placeholder="e.g johnsmith@whatever.com" pattern=".+@.+" name="Email"><br>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="input_message">Message</label>
+                                    <textarea class="textarea form-control" id="input_message"
+                                        placeholder="Okay, Go type something nice here" rows="5"></textarea>
+                                </div>
+
+                                <input id="submit" class="btn btn-primary" onclick="submit_clicked()" type="submit"
+                                    name="Submit">
+
+                            </form>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="row">
+                <footer class="bg-secondary text-white col-sm-12 fixed-bottom text-center border-top border-info"
+                    style="border-width:8px !important">Copyright©</footer>
+            </div>
+
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>
